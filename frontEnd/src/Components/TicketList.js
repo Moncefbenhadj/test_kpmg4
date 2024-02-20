@@ -9,7 +9,7 @@ const TicketList = () => {
     // Fonction pour récupérer la liste des tickets depuis le serveur
     const fetchTickets = async () => {
       try {
-        const response = await fetch('http://test-kpmg-backback.vercel.app/ticket');
+        const response = await fetch('https://kpmg-back.onrender.com/ticket');
         if (response.ok) {
           const data = await response.json();
           console.log(data)
