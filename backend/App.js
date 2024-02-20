@@ -17,5 +17,5 @@ mongoose.connect(URI)
 app.use('/ticket', route_ticket)
 app.use('/user', route_user)
 
-const port = 3000;
-app.listen( process.env.PORT , () => console.log(`Le serveur tourne sur le port: ${port}`));
+const port = process.env.PORT || 3000;
+app.listen( port , () => console.log(`Le serveur tourne sur le port: ${port}`));

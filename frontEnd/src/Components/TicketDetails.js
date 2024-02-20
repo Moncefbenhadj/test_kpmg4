@@ -11,7 +11,7 @@ const TicketDetails = () => {
     // Récupérer les détails du ticket depuis le serveur en utilisant l'ID du ticket dans les paramètres de l'URL
     const fetchTicketDetails = async () => {
       try {
-        const response = await fetch(`http://test-kpmg-back.vercel.app/ticket/${id}`);
+        const response = await fetch(`http://test-kpmg-backback.vercel.app/ticket/${id}`);
         if (response.ok) {
           const data = await response.json();
           setTicket(data);
