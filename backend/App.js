@@ -5,7 +5,11 @@ import route_user from "./Route/route_user.js"
 import cors from "cors"
 
 let app = express()
-app.use(cors());
+app.use(cors({
+    origin: ["https://test-kpmg-backend.vercel.app/"],
+    methods : ["POST","GET","PUT","PATCH","DELETE"],
+    credentials : true
+}));
 app.use(express.json());
 app.use(express.urlencoded({extended : true})); 
 
