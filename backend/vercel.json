@@ -6,7 +6,7 @@
             "use": "@vercel/n.ode"
         }
     ],
-    "routes": [
+    "rewrites": [
         {
             "src": "/(.*)",
             "dest": "/"
