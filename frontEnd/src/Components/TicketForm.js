@@ -11,7 +11,7 @@ const TicketForm = () => {
     event.preventDefault();
     try {
       // Envoi des données au serveur pour créer un nouveau ticket
-      const response = await fetch('http://test-kpmg-backend.vercel.app/ticket', {
+      const response = await fetch('http://test-kpmg-back.vercel.app/ticket', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
