@@ -13,7 +13,7 @@ let URI = 'mongodb+srv://Moncef:moncef123@cluster0.yruvkt3.mongodb.net/test1_kpm
 mongoose.connect(URI)
 .then(()=> console.log("Connexion a Mongo réussie !"))
 .catch(()=> console.log("Connexion a Mongo échouée"));
-
+app.send("heloooo")
 app.use('/ticket', route_ticket)
 app.use('/user', route_user)
 
